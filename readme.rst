@@ -9,8 +9,8 @@ Dockerizing RabbitMQ
 :Description: Dockerfile to build a RabbitMQ container image which can be 
               linked to other containers.
 
-:Release notes: https://raw.githubusercontent.com/antirez/redis/3.2/00-RELEASENOTES
-:Official image: https://hub.docker.com/_/redis/
+:Release notes: https://github.com/rabbitmq/rabbitmq-server/releases
+:Official image: https://hub.docker.com/_/rabbitmq/
 
 
 .. meta::
