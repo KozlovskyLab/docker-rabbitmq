@@ -4,8 +4,8 @@ Dockerizing RabbitMQ
 
 :Author: Vladimir Kozlovski
 :Contact: inbox@vladkozlovski.com
-:Issues: https://github.com/kozlovskistudio/docker-rabbitmq/issues
-:Docker image: https://hub.docker.com/r/kozlovskistudio/rabbitmq/
+:Issues: https://github.com/vladkozlovski/docker-rabbitmq/issues
+:Docker image: https://hub.docker.com/r/vladkozlovski/rabbitmq/
 :Description: Dockerfile to build a RabbitMQ container image which can be 
               linked to other containers.
 
@@ -35,10 +35,10 @@ Pull the latest version of the image from the docker index. This is the
 recommended method of installation as it is easier to update image in the 
 future.
 ::
-    docker pull kozlovskistudio/rabbitmq:latest
+    docker pull vladkozlovski/rabbitmq:latest
 
 Alternately you can build the image yourself.
 ::
-    git clone https://github.com/kozlovskistudio/docker-rabbitmq.git
+    git clone https://github.com/vladkozlovski/docker-rabbitmq.git
     cd docker-rabbitmq
     docker build -t="$USER/rabbitmq" .
