@@ -35,7 +35,7 @@ ENV PATH $RABBITMQ_HOME/sbin:$PATH
 # https://www.rabbitmq.com/install-generic-unix.html
 ENV GPG_KEY 0A9AF2115F4687BD29803A206B73A36E6026DFCA
 
-ENV RABBITMQ_VERSION 3.6.11
+ENV RABBITMQ_VERSION 3.6.12
 
 RUN set -ex; \
 	\
@@ -51,7 +51,7 @@ RUN set -ex; \
 	wget -O rabbitmq-server.tar.xz.asc "https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; \
 	\
 	export GNUPGHOME="$(mktemp -d)"; \
-	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; \
+	gpg --keyserver pool.sks-keyservers.net --recv-keys "$GPG_KEY"; \
 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; \
 	rm -r "$GNUPGHOME" rabbitmq-server.tar.xz.asc; \
 	\
